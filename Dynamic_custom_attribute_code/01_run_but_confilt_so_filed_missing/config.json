@@ -1,0 +1,23 @@
+{
+    "order": {
+      "shopify_endpoint": "orders.json",
+      "hubspot_object": "deal",
+      "field_mapping": {
+        "id": "shopify_order_id",
+        "order_number": "order_number",
+        "total_price": "total_amount",
+        "created_at": "shopify_order_date"
+      }
+    },
+    "customer": {
+      "shopify_endpoint": "customers.json",
+      "hubspot_object": "contact",
+      "field_mapping": {
+        "id": "shopify_customer_id",
+        "first_name": "firstname",
+        "last_name": "lastname",
+        "email": "email"
+      }
+    }
+  }
+  

@@ -1,0 +1,15 @@
+{
+  "customers": {
+    "shopify_endpoint": "customers.json",
+    "shopify_key": "customers",
+    "hubspot_object": "contact",
+    "unique_field": "email",
+    "property_group": "contactinformation",
+    "field_mapping": {
+      "email": "email",
+      "first_name": "firstname",
+      "last_name": "lastname",
+      "phone": "phone"
+    }
+  }
+}

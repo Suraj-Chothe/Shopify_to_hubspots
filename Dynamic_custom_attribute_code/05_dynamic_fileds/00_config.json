@@ -1,0 +1,55 @@
+{
+  "customers": {
+    "shopify_endpoint": "customers.json",
+    "shopify_key": "customers",
+    "hubspot_object": "contact",
+    "unique_field": "email",
+    "property_group": "contactinformation",
+    "field_mapping": {
+      "email": "email",
+      "first_name": "firstname",
+      "last_name": "lastname",
+      "phone": "phone"
+    }
+  },
+  "orders": {
+    "shopify_endpoint": "orders.json?status=any",
+    "shopify_key": "orders",
+    "hubspot_object": "deal",
+    "unique_field": "dealname",
+    "property_group": "dealinformation",
+    "field_mapping": {
+      "name": "dealname",
+      "current_total_price": "amount",
+      "currency": "deal_currency_code",
+      "processed_at": "closedate"
+    },
+    "default_values": {
+      "pipeline": "default",
+      "dealstage": "contractsent"
+    },
+    "allowed_values": {
+      "deal_currency_code": {
+        "allowed": ["USD", "EUR"],
+        "default": "USD"
+      }
+    }
+
+  },
+  "products": {
+       "shopify_endpoint": "products.json",
+       "shopify_key": "products",
+       "hubspot_object": "product",
+       "unique_field": "hs_sku",
+       "property_group": "productinformation",
+       "field_mapping": {
+         "id": "hs_sku",
+         "title": "name",
+         "body_html": "description",
+         "vendor": "vendor",
+         "product_type": "category",
+         "variants.0.price": "price"
+       }
+     }
+
+}
