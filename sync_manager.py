@@ -160,3 +160,4 @@ class SyncManager:
             # print("data--->", data)
             for item in data:
                 self.send_to_hubspot(object_type, item)
+
